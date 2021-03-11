@@ -113,6 +113,7 @@ function getFrame() {
 
         //get the image data from the canvas 
         const imgData = getImageData()
+        console(imgData)
 
         //get the prediction 
         const pred = model.predict(preprocess(imgData)).dataSync()
