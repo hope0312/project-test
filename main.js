@@ -114,13 +114,6 @@ function getFrame() {
         //get the image data from the canvas 
         const imgData = getImageData()
         console.log(imgData)
-        let url = imgData.toDataURL('image/png');
-    let a = document.createElement('a');
-    document.body.appendChild(a);
-    a.href = url;
-    a.download = '畫圖';
-    a.target = '_blank';
-    a.click()
         
 
         //get the prediction 
