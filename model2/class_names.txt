@@ -24,7 +24,6 @@ pig
 pizza
 rabbit
 shark
-airplane
 laptop
 television
 strawberry
@@ -48,3 +47,4 @@ lighter
 lion
 lollipop
 candle
+airplane
