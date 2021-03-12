@@ -8,6 +8,7 @@ var canvas;
 var coords = [];
 var mousePressed = false;
 var mode;
+var xy =[];
 console.log('yamede')
 /*
 prepare the drawing canvas 
@@ -58,6 +59,9 @@ function recordCoor(event) {
 
     if (posX >= 0 && posY >= 0 && mousePressed) {
         coords.push(pointer)
+        console.log(pointer)
+        for(x in obj) xy[xy.length]=x;
+        console.log(xy)
     }
 }
 
