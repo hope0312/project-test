@@ -8,9 +8,7 @@ var canvas;
 var coords = [];
 var mousePressed = false;
 var mode;
-var xy =[];
 console.log('yamede')
-// console.log(xy);
 /*
 prepare the drawing canvas 
 */
@@ -60,9 +58,6 @@ function recordCoor(event) {
 
     if (posX >= 0 && posY >= 0 && mousePressed) {
         coords.push(pointer)
-        console.log(pointer)
-        xy.push(pointer);
-        console.log(xy)
     }
 }
 
@@ -123,7 +118,7 @@ function getFrame() {
         
 
         //get the prediction 
-        const pred = model.predict(preprocess(imgData)).dataSync()
+        const pred = model.predict(preprocess(coords)).dataSync()
 
         //find the top 5 predictions 
         const indices = findIndicesOfMax(pred, 5)
