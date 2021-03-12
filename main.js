@@ -114,7 +114,7 @@ function getFrame() {
 
         //get the image data from the canvas 
         const imgData = getImageData()
-        console.log(imgData)
+        // console.log(imgData)
         
 
         //get the prediction 
